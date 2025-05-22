@@ -1,0 +1,194 @@
+/* Overlay */
+.popform-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  transition: background 0.3s;
+}
+
+/* Modal Flex Layout */
+.popform-modal.popform-modal-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0;
+  max-width: 700px;
+  min-width: 320px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 1.5px 8px rgba(253, 160, 133, 0.10);
+  overflow: hidden;
+}
+
+.popform-modal-image {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 320px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.popform-modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.popform-modal-content {
+  flex: 2 1 340px;
+  padding: 40px 32px 32px 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+
+/* Modern Close Button */
+.popform-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 2;
+  outline: none;
+}
+
+.popform-close:hover,
+.popform-close:focus {
+  background: #fff3e0;
+  box-shadow: 0 4px 16px rgba(253, 160, 133, 0.18);
+}
+
+.popform-close-icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.popform-close-icon:before,
+.popform-close-icon:after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 2px;
+  height: 14px;
+  background: #b76e00;
+  border-radius: 2px;
+}
+
+.popform-close-icon:before {
+  transform: rotate(45deg);
+}
+
+.popform-close-icon:after {
+  transform: rotate(-45deg);
+}
+
+/* Headings */
+.popform-modal-content h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: -1px;
+  margin-bottom: 0.5em;
+}
+
+.popform-modal-content p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+/* Contact Form 7 Styling (modern) */
+.popform-modal-content input,
+.popform-modal-content textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  background: #fafafa;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.popform-modal-content input:focus,
+.popform-modal-content textarea:focus {
+  border: 1.5px solid #fda085;
+  outline: none;
+  box-shadow: 0 0 0 2px #fda08533;
+}
+
+.popform-modal-content input[type="submit"] {
+  background: linear-gradient(90deg, var(--popform-btn-color-start, #f6d365) 0%, var(--popform-btn-color-end, #fda085) 100%);
+  color: #222;
+  border: none;
+  cursor: pointer;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(253, 160, 133, 0.10);
+  transition: background 0.2s, color 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.popform-modal-content input[type="submit"]:hover {
+  background: linear-gradient(90deg, var(--popform-btn-color-end, #fda085) 0%, var(--popform-btn-color-start, #f6d365) 100%);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .popform-modal.popform-modal-flex {
+    flex-direction: column;
+    max-width: 98vw;
+  }
+
+  .popform-modal-image {
+    max-width: 100vw;
+    min-height: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .popform-modal-content {
+    padding: 18px 6vw 24px 6vw;
+  }
+
+  .popform-modal-image {
+    min-height: 120px;
+    height: 120px;
+  }
+}
