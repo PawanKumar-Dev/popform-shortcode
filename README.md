@@ -69,17 +69,9 @@ A WordPress plugin that displays a beautiful, global popup form using a selected
 - `style.css` — Styles for the popup modal and form, including modern UI enhancements, image support, and customizable button/overlay.
 - `popup.js` — Handles popup display logic and user interactions.
 
-## Screenshots
-
-_(Add screenshots here if available)_
-
 ## Credits
 
 - Developed by [Be Problem Solver](https://beproblemsolver.com/)
-
-## License
-
-_(Specify your license here, e.g., GPLv2 or later)_
 
 ## New Features (v1.3 or later)
 
