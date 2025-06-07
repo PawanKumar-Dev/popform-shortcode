@@ -14,7 +14,6 @@ A WordPress plugin that displays a beautiful, global popup form using a selected
 - **Customizable Submit Button:** Select your own gradient color combination for the submit button.
 - **Modern Close Button:** Beautiful, accessible, circular close button with a modern icon and hover effect.
 - **Easy Admin Settings:** Simple admin interface to select which form to display, customize appearance/text, choose popup display pages, set popup delay, and control popup behavior.
-- **No Coding Required:** Just install, configure, and go!
 
 ## Requirements
 
