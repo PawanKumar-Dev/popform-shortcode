@@ -78,3 +78,4 @@ A WordPress plugin that displays a beautiful, global popup form using a selected
 - **Page Selection:** Show popup on all or selected pages.
 - **Popup Delay:** Set delay before popup appears.
 - **Popup Behavior:** Show always, once per session, or once per user.
+- **Setting:** Overall setting availble.
