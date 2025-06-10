@@ -1,6 +1,6 @@
 # PopForm Shortcode
 
-A WordPress plugin that displays a beautiful, global popup form using a selected Contact Form 7 form. Easily customizable, lightweight, and user-friendly.
+A WordPress plugin that displays a beautiful, global popup form using a selected Contact Form 7 form. Easily customizable, lightweight, and user-friendly :octocat:.
 
 ## Features
 
